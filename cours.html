@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources des Matières</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 12000px;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 40px;
+            color: #2c3e50;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            background-color: #ecf0f1;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .resource-link {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .resource-link:hover {
+            background: #2980b9;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Couleurs personnalisées par matière */
+        .magnetisme { background: #f6d365; }
+        .electro { background: #ff9a9e; }
+        .analyse1 { background: #a1c4fd; }
+        .analyse2 { background: #c2e9fb; }
+        .algebre1 { background: #ffecd2; }
+        .algebre2 { background: #fbc2eb; }
+        .geo { background: #fcd5ce; }
+        .info { background: #b5ead7; }
+        .meca { background: #ffdac1; }
+        .tp { background: #e2f0cb; }
+        .dessin { background: #c7ceea; }
+
+
+         .backk-bttn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #6C5CE7;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            text-decoration: none;    
+        }
+
+        
+        .backk-bttn:hover {
+            background-color: #5649D2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .backk-bttn:active {
+            transform: translateY(0);
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container"><br>
+        <h1>Ressources des Matières</h1>
+
+        <div class="grid">
+<a href="tableau de bord.html" class="backk-bttn"><center style="margin-top: 10px;">←</center></a>
+            <div class="card magnetisme">
+                <div class="icon">🧲</div>
+                <h2>Magnétisme 1</h2>
+                <a href="cours mag.html" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+             <div class="card magnetisme">
+                <div class="icon">🧲</div>
+                <h2>Magnétisme 2</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card electro">
+                <div class="icon">⚡</div>
+                <h2>Électrocinétique</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card analyse1">
+                <div class="icon">🧮</div>
+                <h2>Analyse 1</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card analyse2">
+                <div class="icon">🧮</div>
+                <h2>Analyse 2</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card algebre1">
+                <div class="icon">📐</div>
+                <h2>Algèbre 1</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card algebre2">
+                <div class="icon">📐</div>
+                <h2>Algèbre 2</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card geo">
+                <div class="icon">📏</div>
+                <h2>Géométrie Affine</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card info">
+                <div class="icon">💻</div>
+                <h2>Informatique 1</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+             <div class="card info">
+                <div class="icon">💻</div>
+                <h2>Informatique 2</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card meca">
+                <div class="icon">⚙️</div>
+                <h2>Mécanique</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card tp">
+                <div class="icon">🔬</div>
+                <h2>TP Physique</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+             <div class="card tp">
+                <div class="icon">🔬</div>
+                <h2>Chimie générale</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+             <div class="card tp">
+                <div class="icon">🔬</div>
+                <h2>Chimie molléculaire</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+            <div class="card dessin">
+                <div class="icon">📊</div>
+                <h2>Dessin Technique</h2>
+                <a href="#" class="resource-link">📚 Cours</a>
+                <a href="#" class="resource-link">🎥 Vidéos</a>
+                <a href="#" class="resource-link">📝 Épreuves</a>
+                <a href="#" class="resource-link">✅ Corrigés</a>
+                <a href="#" class="resource-link">🧩 Quiz</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
