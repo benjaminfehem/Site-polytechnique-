@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Messagerie - Campus E-Learning</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    background: #003f7d;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background: #002f5e;
+  }
+  main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  .chat-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+  }
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+  }
+  .from-me {
+    background: #d1e7dd;
+    margin-left: auto;
+    text-align: right;
+  }
+  .from-others {
+    background: #e2e3e5;
+    text-align: left;
+  }
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .chat-input button {
+    padding: 10px 20px;
+    border: none;
+    background: #0056b3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .chat-input button:hover {
+    background: #003f7d;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+  }
+
+   .navbar img {
+            width: 60px;
+            height: 60px;
+        }
+
+         .navbar {
+            background-color: #003399;
+            color: white;
+            padding: 15px 15px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+         .footer-line {
+            width: 100%;
+            height: 2px;
+            background-color: #ccc;
+            margin-top: 175px;
+
+       }
+
+
+</style>
+</head>
+<body>
+   <div class="navbar">
+        <img src="logo.png" alt="Logo Polytechnique">
+     <h1><center style="margin-left: 340px;">Campus E-Learning - Polytechnique Maroua</center></h1>
+    </div>
+
+
+<nav>
+  <a href="dashboard.html">Accueil</a>
+  <a href="courses.html">Mes Cours</a>
+  <a href="chat.html">Messagerie</a>
+  <a href="login.html">Déconnexion</a>
+</nav>
+
+<main>
+  <h2>Messagerie - Discussions</h2>
+  
+  <div class="chat-box" id="chatBox">
+    <div class="message from-others">Salut, bienvenue sur le chat !</div>
+    <div class="message from-me">Merci ! Heureux d’être ici.</div>
+  </div>
+  
+  <div class="chat-input">
+    <input type="text" id="messageInput" placeholder="Tapez votre message..." />
+    <button onclick="sendMessage()">Envoyer</button>
+  </div>
+</main>
+
+<div class="footer-line"></div>
+
+<footer>
+  &copy; 2025 Polytechnique Maroua - Tous droits réservés
+</footer>
+
+<script>
+function sendMessage() {
+  const input = document.getElementById('messageInput');
+  const chatBox = document.getElementById('chatBox');
+  const message = input.value.trim();
+
+  if (message !== '') {
+    const newMessage = document.createElement('div');
+    newMessage.className = 'message from-me';
+    newMessage.textContent = message;
+    chatBox.appendChild(newMessage);
+    chatBox.scrollTop = chatBox.scrollHeight;
+    input.value = '';
+  }
+}
+</script>
+</body>
+</html>
