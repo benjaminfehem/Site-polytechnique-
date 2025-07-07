@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un compte – Étudiant</title>
+    <link rel="stylesheet" href="compte-etudiant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1b2735, #090a0f); 
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0.3999999px;
+
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+    justify-content: center;
+    
+}
+
+.highlight {
+    font-size: 2em;
+    color: #ffeb3b;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.form-box input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1em;
+}
+
+.form-box input::placeholder {
+    color: #ccc;
+}
+
+.btn {
+    padding: 12px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fdd835;
+}
+
+.form-links {
+    margin-top: 15px;
+    font-size: 0.85em;
+}
+
+.form-links a {
+    color: #90caf9;
+    text-decoration: none;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+ .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #6C5CE7;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            text-decoration: none;    
+        }
+
+        
+        .back-btn:hover {
+            background-color: #5649D2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-btn:active {
+            transform: translateY(0);
+            }
+
+            .input{
+                   padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1em;
+            }
+
+
+</style>
+<body>
+     <a href="accueil.html" class="back-btn"><center style="margin-top: 10px;">←</center></a>
+    <div class="container">
+        <div class="glass-box">
+            <h1 class="highlight">Créer un compte </h1>
+            <form class="form-box" action="#" method="post">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="ex: Ferdinand Onomo" required>
+
+                <label for="email">Adresse Email</label>
+                <input type="select" id="email" name="email" placeholder="ex: etudiant@mail.com" required>
+
+                <label for="matricule">Votre choix </label>
+                <select id="matricule" name="matricule" required class="input">
+                    <option style="color: black;">Elève</option>
+                    <option style="color: black;">Professeur</option>
+                </select>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+
+                <label for="confirm_password">Confirmer le mot de passe</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="********" required>
+
+                <button type="submit" class="btn">Créer le compte</button>
+
+                <div class="form-links">
+                    déjà un compte ?<a href="login.html"> se connecter</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
