@@ -1,5 +1,4 @@
-# Site-polytechnique-maroua
-# Plateforme e-learning pour l'ENSPM  
+# plate forme web de e-learning pour ENSPM 
 📚 Projet de site web éducatif pour Polytechnique.  
 
 ## Technologies utilisées  
